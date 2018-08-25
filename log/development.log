@@ -4817,3 +4817,13 @@ Cannot render console from 76.88.106.8! Allowed networks: 127.0.0.1, ::1, 127.0.
 
 Started GET "/assets/authors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 76.88.106.8 at 2018-08-25 17:06:25 +0000
 Cannot render console from 76.88.106.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/stats" for 76.88.106.8 at 2018-08-25 17:08:04 +0000
+Cannot render console from 76.88.106.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::StatsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "authors"[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" DESC LIMIT 1
+  Rendered admin/stats/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 43ms (Views: 22.3ms | ActiveRecord: 1.8ms)
